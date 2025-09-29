@@ -1,0 +1,174 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+/* @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *)); */
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+@property --border-angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+@keyframes border-rotate {
+  to {
+    --border-angle: 360deg;
+  }
+}
+
+.border-animation {
+  animation: border-rotate 3s linear infinite;
+}
+
+@font-face {
+  font-family: 'Publica Play';
+  src: url('/fonts/PublicaPlay-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.publica-font {
+  font-family: 'Publica Play', sans-serif;
+}
+
+
+
+
+
+@keyframes loadingLine {
+  0% { width: 0%; }
+  50% { width: 70%; }
+  100% { width: 100%; }
+}
+
+.animate-loading-line {
+  animation: loadingLine 2.5s ease-in-out forwards;
+}
+
+/* globals.css or any global stylesheet */
+
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  background: #1e1e1e; /* Xcode dark background */
+  color: #d4d4d4; /* Default text color */
+  padding: 1em;
+  border-radius: 8px;
+}
+
+/* Comments */
+.hljs-comment,
+.hljs-quote {
+  color: #6a9955;
+  font-style: italic;
+}
+
+/* Keywords, operators */
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #c586c0;
+}
+
+/* Numbers, literals */
+.hljs-literal,
+.hljs-number,
+.hljs-attr {
+  color: #b5cea8;
+}
+
+/* Strings */
+.hljs-string,
+.hljs-doctag {
+  color: #ce9178;
+}
+
+/* Titles (e.g. function names) */
+.hljs-title,
+.hljs-section {
+  color: #4ec9b0;
+}
+
+/* Built-in functions & tags */
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #dcdcaa;
+}
+
+/* Attributes */
+.hljs-attribute,
+.hljs-name,
+.hljs-type {
+  color: #9cdcfe;
+}
+
+/* Addition/Deletion for diffs */
+.hljs-addition {
+  background-color: #144212;
+  color: #b5cea8;
+}
+.hljs-deletion {
+  background-color: #601010;
+  color: #ce9178;
+}
+
+/* Emphasis/Bold */
+.hljs-emphasis {
+  font-style: italic;
+}
+.hljs-strong {
+  font-weight: bold;
+}
+/* .prose > * + * {
+  margin-top: 0.25rem !important; /* reduce vertical spacing between blocks */
+/* } */
+
+/* Make sure headings inside editor blocks have less margin */
+.ce-block h1,
+.ce-block h2,
+.ce-block h3,
+.ce-block h4,
+.ce-block h5,
+.ce-block h6 {
+  margin-top: 0 !important;
+  margin-bottom: 0.3rem !important;
+  line-height: 1.2 !important;
+  font-weight: 600 !important;
+}
+
+/* Also reduce margin bottom of header block containers */
+.ce-header {
+  margin-bottom: 0.3rem !important;
+}
+
+/* Paragraph spacing */
+.ce-paragraph {
+  margin-bottom: 0.25rem !important;
+  line-height: 1.3 !important;
+}
+
+/* List block */
+.ce-list {
+  margin-bottom: 0.3rem !important;
+}
+
+.ce-list ul,
+.ce-list ol {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-left: 1rem !important;
+}
+
+.ce-list li {
+  margin-bottom: 0.1rem !important;
+  line-height: 1.3 !important;
+}
