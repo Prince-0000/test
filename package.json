@@ -29,9 +29,13 @@
     "editorjs-underline": "^0.0.4",
     "editorjs-video": "^1.1.0",
     "emailjs-com": "^3.2.0",
+    "express": "^4.21.1",
     "firebase": "^12.0.0",
     "highlight.js": "^11.11.1",
     "jsdom": "^26.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
     "monaco-editor": "^0.52.2",
     "next": "^15.5.4",
     "next-themes": "^0.4.6",
@@ -43,10 +47,6 @@
     "react-editor-js": "^2.1.0",
     "react-hot-toast": "^2.5.2",
     "react-icons": "^5.5.0",
-    "lodash": "^4.17.21",
-    "moment": "^2.29.4",
-    "express": "^4.21.1",
-    "jsonwebtoken": "^9.0.2",
     "ws": "^8.16.0"
   },
   "devDependencies": {
@@ -55,10 +55,13 @@
     "@tailwindcss/typography": "^0.5.16",
     "@types/node": "24.0.15",
     "@types/react": "19.1.8",
+    "@typescript-eslint/eslint-plugin": "^8.45.0",
+    "@typescript-eslint/parser": "^8.45.0",
     "autoprefixer": "^10.4.21",
     "eslint": "^9",
     "eslint-config-next": "15.4.2",
     "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.11"
+    "tailwindcss": "^4.1.11",
+    "typescript": "^5.9.3"
   }
 }
